@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+div#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+label{
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px ;
+}
+
+#campo {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+#bandeira{
+    width: 160px;
+    height: 100px;
+    background-color:blueviolet;
+    position: relative;
+    top: 37px;
+    left: 70px;
+    
+    
+}
+
+img{
+    width: 160px;
+    height: 100px;
+}
+
+
+
+
+
+
