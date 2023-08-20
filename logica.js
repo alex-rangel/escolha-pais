@@ -1,39 +1,41 @@
 
-let campoSelecao = document.querySelector("#campo")
-let valor = campoSelecao.value 
+let seletor = document.querySelector("#campo")
+let valor = seletor.value
 let bandeira = document.getElementById("imgBandeira")
-let campoBandeira = document.querySelector("#bandeira")
+
+if (valor == "vazio"){
+    bandeira.style.display = "none"
+}
 
 function selecinarPais(){
 
-    let campoSelecao = document.querySelector("#campo")
-    let valor = campoSelecao.value
-    let bandeira = document.getElementById("imgBandeira")
-    let campoBandeira = document.querySelector("#bandeira")
-    console.log(valor)
-    if (valor == "brasil"){
-        campoBandeira.style.display = "block"
+    let pais = seletor.value
+
+      if (pais == "brasil"){
+        bandeira.style.display = "block"
         bandeira.src = "imagens/brasil.jpg"
     }
 
-    else if (valor == "espanha") {
-        campoBandeira.style.display = "block"
+    else if (pais == "espanha") {
+        bandeira.style.display = "block"
         bandeira.src = "imagens/espanha.png"
     }
 
-    else if (valor == "estados-Unidos") {
-        campoBandeira.style.display = "block"
+    else  if (pais == "estados-unidos"){
+        bandeira.style.display = "block"
         bandeira.src = "imagens/estados.unidos.png"
-    }
+    }   
 }
 
-if (valor == "vazio"){
-    bandeira.src = " "
-    campoBandeira.style.display = "none"
-}
-console.log(valor)
+seletor.addEventListener("change", selecinarPais)
+ 
 
-campoSelecao.addEventListener("change", selecinarPais)
+
+
+
+
+
+
 
 
 

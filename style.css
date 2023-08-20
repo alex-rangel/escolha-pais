@@ -43,18 +43,10 @@ label{
     color: white;
 }
 
-#bandeira{
-    width: 160px;
-    height: 100px;
-    background-color:blueviolet;
+img{
     position: relative;
     top: 37px;
     left: 70px;
-    
-    
-}
-
-img{
     width: 160px;
     height: 100px;
 }
