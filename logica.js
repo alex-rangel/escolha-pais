@@ -9,19 +9,19 @@ if (valor == "vazio"){
 
 function selecinarPais(){
 
-    let pais = seletor.value
+    let valor = seletor.value
 
-      if (pais == "brasil"){
+      if (valor == "brasil"){
         bandeira.style.display = "block"
         bandeira.src = "imagens/brasil.jpg"
     }
 
-    else if (pais == "espanha") {
+    else if (valor == "espanha") {
         bandeira.style.display = "block"
         bandeira.src = "imagens/espanha.png"
     }
 
-    else  if (pais == "estados-unidos"){
+    else {
         bandeira.style.display = "block"
         bandeira.src = "imagens/estados.unidos.png"
     }   
