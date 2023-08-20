@@ -1,22 +1,19 @@
 
 let seletor = document.querySelector("#campo")
-let valor = seletor.value
 let bandeira = document.getElementById("imgBandeira")
 
-if (valor == "vazio"){
+if (seletor.value == "vazio"){
     bandeira.style.display = "none"
 }
 
 function selecinarPais(){
 
-    let valor = seletor.value
-
-      if (valor == "brasil"){
+      if (seletor.value == "brasil"){
         bandeira.style.display = "block"
         bandeira.src = "imagens/brasil.jpg"
     }
 
-    else if (valor == "espanha") {
+    else if (seletor.value == "espanha") {
         bandeira.style.display = "block"
         bandeira.src = "imagens/espanha.png"
     }
